@@ -1,3 +1,12 @@
 1- Crear un arreglo vacio.
 2- Haz un bucle que recorra los numeros del 1 al 100 y lo introduzca en el arreglo vacio.
 3- mostrar un numero random del arreglo.
+
+
+
+
+
+////
+Mostrar las operaciones en pantalla
+crear una caja de respuesta
+validar que la respuesta sea igual al resultado de las operaciones
