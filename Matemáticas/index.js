@@ -1,5 +1,5 @@
 const operadores = ['+', '-'];
-const operador = Math.floor(Math.random() * operadores.length);
+const operador = operadores[Math.floor(Math.random() * operadores.length)];
 
 
 const numero1 = Math.floor(Math.random() * 100);
