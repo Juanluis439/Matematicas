@@ -19,16 +19,25 @@ function matematica(numero1, operador, numero2){
     return resultado;
 }
 
-for (let index = 0; index < 5; index++) {
+function mostrarOperacion() {
     const numero1 = generaNumero();
     const numero2 = generaNumero();
-    const operadorActual = generaOperador()
-    console.log(`Cuanto es ${numero1}${operadorActual}${numero2}`)
+    const operadorActual = generaOperador();
+    const operacion = `Cuánto es ${numero1} ${operadorActual} ${numero2}`;
     const resultadoOperacion = matematica(numero1, operadorActual, numero2);
-    console.log(resultadoOperacion)
-    // Dentro del loop se pueda comprobar la entrada del usuario que sea igual al resultadoOperacion
+    document.getElementById('operacion').innerText = operacion;
+    return resultadoOperacion;
 }
 
+const resultadoOperacionActual = mostrarOperacion();
 
+function verificarRespuesta() {
+    const respuestaUsuario = parseInt(document.getElementById('respuesta').value);
+    
+    if (respuestaUsuario === resultadoOperacionActual) {
+        alert("¡Respuesta correcta!");
+    } else {
+        alert("Respuesta incorrecta. Inténtalo de nuevo.");
+    }
+}
 
-console.log(resultadoOperacion);

@@ -10,3 +10,19 @@
 Mostrar las operaciones en pantalla
 crear una caja de respuesta
 validar que la respuesta sea igual al resultado de las operaciones
+
+
+
+// Deberia bajar la cantidad de numero a 50 para que las operaciones no pasen de una suma mayor a 100,
+// asi esto seria mas facil para el cuervo.
+
+
+// hay que añadir una maquetacion de css.
+
+
+!!LO QUE HE HECHO!!
+
+1- Declar operaciones y funciones de generacion de numeros aleatorios y operadores.
+2- Creé una funcion de operaciones "matematica" que toma como parametros 2 numeros aleatorios y un operador como entrada y realiza la operacion matematica.
+3- Esta funcion crea una cadena de operaciones para luego mostrarla en el HTML con el id "operacion" y devuelve el resultado.
+4- Verificar la entrada del usuario llamando la funcion anterior para obtener una nueva operacion y mostrar una alerta indicando el resultado.
