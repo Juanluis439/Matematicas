@@ -25,7 +25,6 @@ function mostrarOperacion() {
     const operadorActual = generaOperador();
     const operacion = `Cuánto es ${numero1} ${operadorActual} ${numero2}`;
     const resultadoOperacion = matematica(numero1, operadorActual, numero2);
-    console.log(resultadoOperacion);
     document.getElementById('operacion').innerText = operacion;
     return resultadoOperacion;
 }
@@ -37,6 +36,7 @@ function verificarRespuesta() {
     
     if (respuestaUsuario === resultadoOperacionActual) {
         alert("¡Respuesta correcta!");
+        document.getElementById('respuesta').value = " ";
         resultadoOperacionActual = mostrarOperacion();
     } else {
         alert("Respuesta incorrecta. Inténtalo de nuevo.");
