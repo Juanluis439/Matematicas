@@ -1,4 +1,6 @@
 const operadores = ['+', '-'];
+let aciertos = 0;
+let fallos = 0;
 
 const generaOperador =()=> operadores[Math.floor(Math.random() * operadores.length)];
 const generaNumero = () =>  Math.floor(Math.random() * 50);
@@ -29,17 +31,21 @@ function mostrarOperacion() {
     return resultadoOperacion;
 }
 
-const resultadoOperacionActual = mostrarOperacion();
+let resultadoOperacionActual = mostrarOperacion();
 
 function verificarRespuesta() {
     const respuestaUsuario = parseInt(document.getElementById('respuesta').value);
     
     if (respuestaUsuario === resultadoOperacionActual) {
-        alert("¡Respuesta correcta!");
+        aciertos++;
+        document.getElementById('aciertos').innerText = aciertos;
         document.getElementById('respuesta').value = " ";
         resultadoOperacionActual = mostrarOperacion();
     } else {
-        alert("Respuesta incorrecta. Inténtalo de nuevo.");
+        fallos++;
+        document.getElementById('fallos').innerText = fallos;
+        document.getElementById('respuesta').value = " ";
+        resultadoOperacionActual = mostrarOperacion();
     }
 
     
