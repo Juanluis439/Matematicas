@@ -30,7 +30,6 @@ function mostrarOperacion() {
         numero2 = numero1
         numero1 = temp
     }
-    console.log(numero1, numero2, operadorActual)
     const operacion = `Cuánto es ${numero1} ${operadorActual} ${numero2}`;
     const resultadoOperacion = matematica(numero1, operadorActual, numero2);
     document.getElementById('operacion').innerText = operacion;

@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Operadores Matematicos</title>
 </head>
     <title>Operaciones Matemáticas</title>
 <body>
+   <div class="envoltura">
+        <h1>Operaciones Matemáticas</h1>
 
-    <h1>Operaciones Matemáticas</h1>
+        <div id="operacion"></div>
 
-    <div id="operacion"></div>
+        <input type="text" id="respuesta" placeholder="Ingrese su respuesta">
+        
+        <button onclick="verificarRespuesta()">Verificar</button>
 
-    <input type="text" id="respuesta" placeholder="Ingrese su respuesta">
-    
-    <button onclick="verificarRespuesta()">Verificar</button>
+        <div>
+            Aciertos: <span id="aciertos">0</span>
+        </div>
+        <div>
+            Fallos: <span id="fallos">0</span>
+        </div>
 
-    <div>
-        Aciertos: <span id="aciertos">0</span>
-    </div>
-    <div>
-        Fallos: <span id="fallos">0</span>
     </div>
 
     <script src="index.js"></script>
