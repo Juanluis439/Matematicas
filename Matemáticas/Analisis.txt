@@ -1,25 +1,3 @@
-1- Crear un arreglo vacio.
-2- Haz un bucle que recorra los numeros del 1 al 100 y lo introduzca en el arreglo vacio.
-3- mostrar un numero random del arreglo.
-
-
-
-
-
-////
-Mostrar las operaciones en pantalla
-crear una caja de respuesta
-validar que la respuesta sea igual al resultado de las operaciones
-
-
-
-// Deberia bajar la cantidad de numero a 50 para que las operaciones no pasen de una suma mayor a 100,
-// asi esto seria mas facil para el cuervo.
-
-
-// hay que añadir una maquetacion de css.
-
-
 !!LO QUE HE HECHO!!
 
 1- Declar operaciones y funciones de generacion de numeros aleatorios y operadores.
