@@ -11,7 +11,7 @@ function matematica(numero1, operador, numero2){
             resultado = numero1 + numero2;
             break;
         case '-':
-            resultado = numero1 - numero2;
+            resultado = Math.max(numero1 - numero2, 0);            
             break;
         default:
             resultado = "no existe";
