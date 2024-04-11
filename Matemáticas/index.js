@@ -22,9 +22,15 @@ function matematica(numero1, operador, numero2){
 }
 
 function mostrarOperacion() {
-    const numero1 = generaNumero();
-    const numero2 = generaNumero();
+    let numero1 = generaNumero();
+    let numero2 = generaNumero();
     const operadorActual = generaOperador();
+    if(operadorActual === "-" && numero2 > numero1){
+        let temp = numero2
+        numero2 = numero1
+        numero1 = temp
+    }
+    console.log(numero1, numero2, operadorActual)
     const operacion = `Cuánto es ${numero1} ${operadorActual} ${numero2}`;
     const resultadoOperacion = matematica(numero1, operadorActual, numero2);
     document.getElementById('operacion').innerText = operacion;
