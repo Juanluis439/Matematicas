@@ -3,8 +3,18 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 200px;
+    font-family: "Poppins", sans-serif;
 }
 
+#puntos {
+    position: fixed;  
+    top: 0;       
+    right: 0;
+    padding: 10px;
+    background-color: #FFC470;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
 .envoltura{
     width: 420px;
     background-color: #FFC470;

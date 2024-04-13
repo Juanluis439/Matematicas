@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
     <title>Operadores Matematicos</title>
 </head>
     <title>Operaciones Matemáticas</title>
 <body>
+
+    <div id="puntos">
+        <div>
+            Aciertos: <span id="aciertos">0</span>
+        </div>
+        <div>
+            Fallos: <span id="fallos">0</span>
+        </div>
+    </div>
+
+
+
+
    <div class="envoltura">
         <h1>Operaciones Matemáticas</h1>
 
@@ -16,14 +30,6 @@
         <input type="text" id="respuesta" placeholder="Ingrese su respuesta">
         
         <button onclick="verificarRespuesta()">Verificar</button>
-
-        <div>
-            Aciertos: <span id="aciertos">0</span>
-        </div>
-        <div>
-            Fallos: <span id="fallos">0</span>
-        </div>
-
     </div>
 
     <script src="index.js"></script>
