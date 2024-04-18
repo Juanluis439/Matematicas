@@ -26,3 +26,17 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.input-number{
+    margin: 1rem 0rem;
+    padding: 0.5rem;
+    width: 14rem;
+    border: none;
+    border-radius: 15px;
+}
+.verificar-button{
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    background: #8b322c;
+    color: #fff;
+    font-weight: 700;
+}
